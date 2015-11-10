@@ -22,6 +22,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cosmo/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+
+
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
     </head>
@@ -31,7 +35,12 @@
         <![endif]-->
 
 
-        <section id="accueil" class ="row">
+
+
+
+
+<!--  -->
+        <section id="accueil" class ="">
             <div class="titre">
                 <h1></h1>
                 <img class="logo" src="img/ecoclick.svg">
@@ -42,7 +51,7 @@
             <!-- <div class="titre"> -->
                 <a href="http://ecoclick.meteor.com/profil">
 
-                      <button type="button" class="btn btn-success ">Démarrer une partie</button>
+                      <button type="button" class="btn btn-success">Démarrer une partie <i><small>(alpha)</small></i></button>
                 </a>
 
                 <a href="#enjeu">
@@ -55,7 +64,6 @@
  -->          
    </div> 
 
-        <div class="container">
 
         <header>
             
@@ -67,14 +75,55 @@
 
         <section id="enjeu">
             <h2>Enjeu</h2>
+            <div class="row">
+                <div class="col-md-4">
+                <blockquote>
+                    <p>Internet représente plus d'émissions de C02 que l'ensemble du traffic aérien</p>
+                    <small>World Bank?</small>
+                    </blockquote>
+                </div>
+                 <div class="col-md-4">
+                 <blockquote>
+                    <p>Un mail représente 19 grammes de CO2</p>
+                    <small>Cabinet truc</small>
+                </blockquote>
+                </div>
+                 <div class="col-md-4">
+                 <blockquote>
+                    <p>Une recherche google équivaut à une ampoule allumée pendant une heure</p>
+                    <small>Pas google</small>
+                    </blockquote>
+
+                </div>
+                
+                
+
+
+
+            </div>
 
             
         </section>
 
         <section id="contenu">
             <h2>Ecoclick</h2>
+            <p> Ecoclick est une malette pédagogique avec <p>
 
-            
+             <div class="row">
+                <div class ="col-md-4">
+                    <h3>Des supports pédagogiques</h3>
+                    <h5>Frise, poster et mode d'emploi </h5>
+                </div>
+
+                <div class ="col-md-4 ">
+                    <h3>Un jeu</h3>
+                    <h5>Webapp </h5>
+                </div>
+                 <div class ="col-md-4">
+                    <h3>Un guide des bonnes pratiques</h3>
+                    <h5>Quelques actions pratiques pour réduire son impact</h5>
+                </div>
+            </div>
         </section>
 
         <section id="utilisation">
@@ -84,35 +133,45 @@
         </section>
 
         <section id="equipe">
+            
             <h2>L'équipe</h2>
 
             <p>Ecoclick est l'histoire de la rencontre de six compétences autour d'un projet commun, réunies grace au C3 challenge de Lyon.</p>
+            <div class="row">
+                <div class ="profile col-md-4">
+                    <img src="img/avatar1.svg" height="90" width="90">
+                    <h4>Aurélie</h4>
+                    <h5>Design web & illustrations</h5>
+                </div>
 
-        <div class ="fiche">
-            Aurélie
-            Design web & illustrations
-        </div>
-        <div class ="fiche">
-        Aude
-            Marketing & développement
-        </div>
-         <div class ="fiche">   
-        
-        Clara
-            Design de produit
-        </div>
-        <div class ="fiche">
-        Thibault
-            Développement 
-        </div>
-        <div class ="fiche">
-        Valentin
-            Design & infographie
-        </div>
-        <div class ="fiche">
-        Xavier
-            Gestion de projet
-        </div>
+                <div class ="profile col-md-4 ">
+                    <img src="img/avatar3.svg" height="90" width="90">
+
+                    <h4>Aude </h4>
+
+                    <h5>Marketing & développement</h5>
+                </div>
+                 <div class ="profile col-md-4">
+                    <img src="img/avatar1.svg" height="90" width="90">
+                    <h4>Clara</h4>
+                    <h5>Design de produit</h5>
+                </div>
+                <div class ="profile col-md-4">
+                    <img src="img/avatar2.svg" height="90" width="90">
+                    <h4>Thibault</h4>
+                    <h5>Développement </h5>
+                </div>
+                <div class ="profile col-md-4">
+                    <img src="img/avatar2.svg" height="90" width="90">
+                    <h4>Valentin</h4>
+                    <h5>Design & infographie</h5>
+                </div>
+                <div class ="profile col-md-4">
+                    <img src="img/twt.jpg" height="90" width="90">
+                    <h4>Xavier</h4>
+                    <h5>Gestion de projet</h5>
+                </div>
+            </div>
 
             
         </section>

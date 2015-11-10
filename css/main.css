@@ -108,9 +108,9 @@ textarea {
 }
 
 section {
-/*    text-align: center;
+    text-align: center;
     padding:3em 3em;
-*/
+
 }
 
 .logo {
@@ -123,7 +123,7 @@ section {
 }
 
 #accueil {
-    background: url(../img/header.svg) no-repeat center center fixed; 
+    background: url(../img/headerMod.svg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -163,6 +163,22 @@ section {
 
 }
 
+.profile {
+
+}
+    
+    .profile img {
+        /*border-radius: 50%;*/
+        border-radius: 40%;
+        border
+    }
+    .profile h4 {
+
+    }
+    .profile h5 {
+        font-style: italic;
+        /*margin: 0px;*/
+    }
 
 
 footer {

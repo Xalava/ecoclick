@@ -108,34 +108,58 @@ textarea {
 }
 
 section {
-    text-align: center;
+/*    text-align: center;
     padding:3em 3em;
+*/
+}
+
+.logo {
+      /*-webkit-filter: contrast(1.8);*/
+  filter: contrast(1.8);
+
+  -webkit-filter: drop-shadow(6px 6px 4px rgba(0,0,0,0.9));
+  filter: drop-shadow(16px 16px 4px rgba(0,0,0,0.9));
 
 }
 
+#accueil {
+    background: url(../img/header.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+}
 
+    .titre {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        vertical-align: middle;
+    }
 
-.accueil {
+#enjeu {
 
 }
 
-.enjeu {
+#contenu{
 
 }
 
-.contenu{
+#utilisation{
 
 }
 
-.utilisation{
+#equipe{
 
 }
 
-.equipe{
-
-}
-
-.contact{
+#contact{
 
 }
 

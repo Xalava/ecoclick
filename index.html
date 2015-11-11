@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="fr">
     <head>
         <meta charset="utf-8">
@@ -16,14 +16,15 @@
  -->        <link rel="shortcut icon" href="favicon.ico">
 
         <!-- Style -->
-        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Normalize est inclu dans bootstrap -->
+        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
         <link rel="stylesheet" href="css/main.css">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cosmo/bootstrap.min.css">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <script src="js/bootstrap.min.js"></script>
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+        <!-- <script src="js/bootstrap.min.js"></script> -->
 
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -36,137 +37,169 @@
         <header>
         </header>
 
-        <section id="accueil" class ="">
-            <div class="titre">
-                <h1></h1>
-                <img class="logo" src="img/ecoclick.svg">
-                <br/>
-                <br/>
 
-                <a href="http://ecoclick.meteor.com/profil">
 
-                      <button type="button" class="btn btn-success">Démarrer une partie <i><small>(alpha)</small></i></button>
-                </a>
+            <section id="accueil" class ="">
+                <div class="titre">
+                    <h1></h1>
+                    <img class="logo" src="img/ecoclick.svg">
+                    <br/>
+                    <br/>
 
-                <a href="#enjeu">
+                    <a href="http://ecoclick.meteor.com/profil">
 
-                    <button type="button" class="btn btn-default ">En savoir plus</button>
+                          <button type="button" class="btn btn-success">Démarrer une partie <i><small>(alpha)</small></i></button>
+                    </a>
 
-                </a>
-        
-            </div> 
-        </section>
+                    <a href="#enjeu">
 
-        <section id="enjeu">
-            <h2>Enjeu</h2>
-            <div class="row">
-                <div class="col-md-4">
-                <blockquote>
-                    <p>Internet représente plus d'émissions de C02 que l'ensemble du traffic aérien</p>
-                    <small>World Bank?</small>
-                    </blockquote>
-                </div>
-                 <div class="col-md-4">
-                 <blockquote>
-                    <p>Un mail représente 19 grammes de CO2</p>
-                    <small>Cabinet truc</small>
-                </blockquote>
-                </div>
-                 <div class="col-md-4">
-                 <blockquote>
-                    <p>Une recherche google équivaut à une ampoule allumée pendant une heure</p>
-                    <small>Pas google</small>
-                    </blockquote>
+                        <button type="button" class="btn btn-default ">En savoir plus</button>
 
-                </div>
-             </div>          
-        </section>
-
-        <section id="contenu">
-            <h2>Ecoclick</h2>
-            <p> Ecoclick est une malette pédagogique avec <p>
-             <div class="row">
-                <div class ="col-md-4">
-                    <h3>Des supports pédagogiques</h3>
-                    <h5>Frise, poster et mode d'emploi </h5>
-                </div>
-                <div class ="col-md-4 ">
-                    <h3>Un jeu</h3>
-                    <h5>Webapp </h5>
-                </div>
-                 <div class ="col-md-4">
-                    <h3>Un guide des bonnes pratiques</h3>
-                    <h5>Quelques actions pratiques pour réduire son impact</h5>
-                </div>
-            </div>
-        </section>
-
-        <section id="utilisation">
-            <h2>Comment ça se clique?</h2>         
-        </section>
-
-        <section id="equipe">
+                    </a>
             
-            <h2>L'équipe</h2>
+                </div> 
+            </section>
 
-            <p>Ecoclick est l'histoire de la rencontre de six compétences autour d'un projet commun, réunies grace au C3 challenge de Lyon.</p>
-            <div class="row">
-                <div class ="profile col-md-4">
-                    <img src="img/avatar1.svg" height="90" width="90">
-                    <h4>Aurélie</h4>
-                    <h5>Design web & illustrations</h5>
-                    <a href="index.html#"> <i class="icon-facebook"></i></a>
-                    <a href="index.html#"> <i class="icon-twitter"></i></a>
-                    <a href="index.html#"> <i class="icon-envelope"></i></a>
+        <div class="container-fluid">
+            <section id="enjeu">
+                <!-- <h1>Enjeu</h 1> -->
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="block">
+                            <span class="hovicon effect-plane"></span>
+                        </div>
+                        <blockquote>
+                            <p>Internet représente plus d'émissions que l'ensemble du traffic aérien</p>
+                            <small>World Bank?</small>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="block">
+                            <span class="hovicon effect-mail"></span>
+
+                        </div>
+                        <blockquote>
+                            <p>Un mail représente 19 grammes de CO2</p>
+                            <small>Cabinet truc</small>
+                        </blockquote>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="block">
+                            <span class="hovicon effect-recherche"></span>
+                        </div>
+                         <blockquote>
+                            <p>Une recherche google équivaut à une ampoule allumée pendant une heure</p>
+                            <small>Pas google</small>
+                        </blockquote>
+                    </div>
+
+                 </div>  <!-- endrow -->     
+            </section>
+
+            <section id="contenu">
+                <h2>Ecoclick</h2>
+                <p> Ecoclick est une malette pédagogique avec </p>
+                 <div class="row">
+                    <div class ="col-md-4">
+                        <h3>Des supports pédagogiques</h3>
+                        <h5>Frise, poster et mode d'emploi </h5>
+                    </div>
+                    <div class ="col-md-4 ">
+                        <h3>Un jeu</h3>
+                        <h5>Webapp </h5>
+                    </div>
+                     <div class ="col-md-4">
+                        <h3>Un guide des bonnes pratiques</h3>
+                        <h5>Quelques actions pratiques pour réduire son impact</h5>
+                    </div>
+                </div>
+            </section>
+
+            <section id="utilisation">
+                <h2>Comment ça se clique?</h2>  
+
+
+
+
+            </section>
+
+            <section id="equipe">
+                
+                <h2>L'équipe</h2>
+                <div class="row">
+                    <div class ="col-md-6 col-md-offset-3">
+                        <p>Ecoclick est porté par une équipe pluridisciplinaire associants etudiants et professionnels, réunie le autour d'un projet commun, grace au C3 challenge de Lyon.</p>
+                    </div>
                 </div>
 
-                <div class ="profile col-md-4 ">
-                    <img src="img/avatar1.svg" height="90" width="90">
+                <div class="row">
+                    <div class ="profile col-md-2 col-md-offset-3">
+                        <img src="img/avatar1.svg" height="90" width="90">
+                        <h4>Aurélie</h4>
+                        <h5>Design web & illustrations</h5>
+                        <a href="index.html#"> <i class="icon-facebook"></i></a>
+                        <a href="index.html#"> <i class="icon-twitter"></i></a>
+                        <a href="index.html#"> <i class="icon-envelope"></i></a>
+                    </div>
 
-                    <h4>Aude </h4>
+                    <div class ="profile col-md-2 ">
+                        <img src="img/avatar3.svg" height="90" width="90">
 
-                    <h5>Marketing & développement</h5>
+                        <h4>Aude </h4>
+
+                        <h5>Marketing & développement</h5>
+                    </div>
+                     <div class ="profile col-md-2">
+                        <img src="img/avatar3.svg" height="90" width="90">
+                        <h4>Clara</h4>
+                        <h5>Design de produit</h5>
+                    </div>
                 </div>
-                 <div class ="profile col-md-4">
-                    <img src="img/avatar3.svg" height="90" width="90">
-                    <h4>Clara</h4>
-                    <h5>Design de produit</h5>
+                <div class="row">
+                    <div class ="profile col-md-2 col-md-offset-3">
+                        <img src="img/avatar2.svg" height="90" width="90">
+                        <h4>Thibault</h4>
+                        <h5>Développement </h5>
+                    </div>
+                    <div class ="profile col-md-2">
+                        <img src="img/avatar2.svg" height="90" width="90">
+                        <h4>Valentin</h4>
+                        <h5>Design & infographie</h5>
+                    </div>
+                    <div class ="profile col-md-2">
+                        <img src="img/xa.jpg" height="90" width="90">
+                        <h4>Xavier</h4>
+                        <h5>Gestion de projet</h5>
+                    </div>
+
                 </div>
-                <div class ="profile col-md-4">
-                    <img src="img/avatar2.svg" height="90" width="90">
-                    <h4>Thibault</h4>
-                    <h5>Développement </h5>
-                </div>
-                <div class ="profile col-md-4">
-                    <img src="img/avatar2.svg" height="90" width="90">
-                    <h4>Valentin</h4>
-                    <h5>Design & infographie</h5>
-                </div>
-                <div class ="profile col-md-4">
-                    <img src="img/xa.jpg" height="90" width="90">
-                    <h4>Xavier</h4>
-                    <h5>Gestion de projet</h5>
-                </div>
-            </div>
 
-            
-        </section>
+                
+            </section>
 
-        <section id="contact">
-            
-        </section>
+            <section id="contact">
+                
+            </section>
 
-        <footer>
-            
-            <img src="img/ecoclick.svg">
+        </div> <!-- container fluid -->
+            <footer>
+                
+                <img src="img/ecoclick.svg">
 
-        </footer>
+            </footer>
 
-        </div>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
@@ -179,5 +212,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
     </body>
 </html>

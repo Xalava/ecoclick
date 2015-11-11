@@ -1,21 +1,18 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 /* ==========================================================================
    generic colors
-   ========================================================================== */
-/*
- basegray 323232
 
+basegray 323232
+logo green #70b52e
+logo gray #575756
+
+background
+yellow fff271
+red e84436
 */
+
 /* ==========================================================================
    Base styles: opinionated defaults
-   ========================================================================== */
+*/
 
 html {
     color: #222;
@@ -89,7 +86,7 @@ textarea {
 
 /* ==========================================================================
    Browser Upgrade Prompt
-   ========================================================================== */
+*/
 
 .browserupgrade {
     margin: 0.2em 0;
@@ -98,9 +95,21 @@ textarea {
     padding: 0.2em 0;
 }
 
+
+
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+   Xa's  styles
+*/
+
+
+
+.container-fluid {
+     padding-right: 0; /*15px in bootstrap.css*/
+     padding-left: 0;  /*idem*/
+     margin-right: auto;
+     margin-left: auto;
+}
+
 
 .center {
 
@@ -168,7 +177,7 @@ section {
 }
 
 .profile:hover {
-  background: gray;
+  background: #979796;
 }
     
     .profile img {
@@ -193,13 +202,228 @@ footer {
 
 
 
+/* ==========================================================================
+   Light Style
+*/
+ .block {
+    width: 100%;
+/*    background-color: gray;
+*/}
+.hovicon {
+    display: inline-block;
+    font-size: 45px;
+    line-height: 90px;
+    cursor: pointer;
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+
+}
+
+.hovicon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content:'';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+    opacity: 1;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.hovicon:before {
+    speak: none;
+    font-size: 48px;
+    line-height: 90px;
+
+    display: block;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*  PLANE */ 
+.hovicon.effect-plane {
+}
+.hovicon.effect-plane:after {
+
+}
+.hovicon.effect-plane:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e135";
+  color: #70b52e;
+}
+.hovicon.effect-plane:hover {
+
+  animation:rotate 1s;
+
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  50% {
+    -webkit-transform: rotate(30deg);
+    transform: translateY(30deg);
+  }
+
+  99% {
+    -webkit-transform: translateY(90deg);
+    transform: translateY(90deg);
+  }
+}
 
 
+.hovicon.effect-plane:hover:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e108";
+  color: #e84436;
+}
+.hovicon.effect-plane:hover:after {
+}
 
+/* MAIL */
+.hovicon.effect-mail {
+
+}
+.hovicon.effect-mail:after {
+
+}
+.hovicon.effect-mail:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\2709";
+  color:575756;
+}
+
+
+.hovicon.effect-mail:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+/*    border: 4px ;
+
+*/
+  animation: bounce 1s;
+}
+
+.hovicon.effect-mail:hover:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\2601";
+}
+
+.hovicon.effect-mail:hover:after {
+  
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
+/* Recherche*/
+
+.hovicon.effect-recherche {
+
+
+    color: #0047F1;
+
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+    -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+    transition: transform ease-out 0.1s, background 0.2s;
+}
+.hovicon.effect-recherche:after {
+
+}
+.hovicon.effect-recherche:before {
+  font-family: 'Glyphicons Halflings';
+  content: "\e003";
+
+}
+
+.hovicon.effect-recherche:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #F9A600;
+/*    border: 4px ;
+*/}
+
+.hovicon.effect-recherche:hover:after {
+    -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+    -moz-animation: sonarEffect 1.3s ease-out 75ms;
+    animation: sonarEffect 1.3s ease-out 75ms;
+}
+@-webkit-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.8;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff271, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff271, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -webkit-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@-moz-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.8;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff271, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff271, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -moz-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.8;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff271, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff271, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
 
 /* ==========================================================================
    Helper classes
-   ========================================================================== */
+*/
 
 /*
  * Hide visually and from screen readers:
@@ -275,7 +499,8 @@ footer {
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
-   ========================================================================== */
+
+*/
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
@@ -292,7 +517,7 @@ footer {
    Print styles.
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+*/
 
 @media print {
     *,

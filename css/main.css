@@ -101,7 +101,9 @@ textarea {
    Xa's  styles
 */
 
-
+.texvert {
+  color:  #70b52e;
+}
 
 .container-fluid {
      padding-right: 0; /*15px in bootstrap.css*/
@@ -111,14 +113,10 @@ textarea {
 }
 
 
-.center {
-
-    text-align: center
-}
 
 section {
     text-align: center;
-    padding:3em 3em;
+    padding:4em 4em;
 
 }
 
@@ -138,6 +136,7 @@ section {
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
+
     text-align: center;
     position: relative;
 }
@@ -157,6 +156,16 @@ section {
 }
 
 #contenu{
+    background: url(../img/headerMod.svg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    color:black;
+    text-shadow:2px 2px 8px #555;
+    text-decoration: bold;
 
 }
 
@@ -177,7 +186,7 @@ section {
 }
 
 .profile:hover {
-  background: #979796;
+  background: #EEE;
 }
     
     .profile img {

@@ -202,14 +202,26 @@ section {
 
 
 footer {
-    text-align: center;
     background-color: #323232;
     padding: 2em 2em;
+    text-align: center;
 }
 
   .logofin {
 
+  /*margin:auto;*/
   }
+
+  .coda {
+  text-align : center;
+  background-color: #e84436;
+  color:white;
+  padding: 1em;
+  }
+
+  .coda .badge{
+  }
+
 
 
 

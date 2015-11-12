@@ -112,22 +112,13 @@ textarea {
      margin-left: auto;
 }
 
-
-
 section {
     text-align: center;
     padding:4em 4em;
 
 }
 
-.logo {
-      /*-webkit-filter: contrast(1.8);*/
-  filter: contrast(1.8);
 
-  -webkit-filter: drop-shadow(6px 6px 4px rgba(0,0,0,0.9));
-  filter: drop-shadow(16px 16px 4px rgba(0,0,0,0.9));
-
-}
 
 #accueil {
     background: url(../img/headerMod.svg) no-repeat center center fixed; 
@@ -149,6 +140,15 @@ section {
         margin-right: -50%;
         transform: translate(-50%, -50%);
         vertical-align: middle;
+    }
+
+    .logo {
+      -webkit-filter: contrast(1.8);
+      filter: contrast(1.8);
+
+      -webkit-filter: drop-shadow(6px 6px 4px rgba(0,0,0,0.9));
+      filter: drop-shadow(16px 16px 4px rgba(0,0,0,0.9));
+
     }
 
 #enjeu {
@@ -190,7 +190,6 @@ section {
 }
     
     .profile img {
-        /*border-radius: 50%;*/
         border-radius: 40%;
         border
     }
@@ -199,7 +198,6 @@ section {
     }
     .profile h5 {
         font-style: italic;
-        /*margin: 0px;*/
     }
 
 
@@ -208,6 +206,10 @@ footer {
     background-color: #323232;
     padding: 2em 2em;
 }
+
+  .logofin {
+
+  }
 
 
 
@@ -265,45 +267,114 @@ footer {
 
 /*  PLANE */ 
 .hovicon.effect-plane {
+
 }
 .hovicon.effect-plane:after {
 
 }
 .hovicon.effect-plane:before {
   font-family: 'Glyphicons Halflings';
-  content: "\e135";
+  content: "\e135"; /*globle*/
   color: #70b52e;
+
+
 }
 .hovicon.effect-plane:hover {
 
-  animation:rotate 1s;
+  animation:animationFrames .5s;
 
 }
-
-@keyframes rotate {
+@keyframes animationFrames{
   0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
+  
+    transform:  translate(-9px,0px)  skewX(-30deg) ;
   }
-
-  50% {
-    -webkit-transform: rotate(30deg);
-    transform: translateY(30deg);
+  60% {
+    opacity:1;
+    transform:  translate(5px,0px)  skewX(30deg) ;
   }
-
-  99% {
-    -webkit-transform: translateY(90deg);
-    transform: translateY(90deg);
+  80% {
+    opacity:1;
+    transform:  translate(0px,0px)  skewX(-15deg);
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  skewX(0deg) ;
   }
 }
+
+@-moz-keyframes animationFrames{
+  0% {
+
+    -moz-transform:  translate(-9px,0px)  skewX(-30deg) ;
+  }
+  60% {
+    opacity:1;
+    -moz-transform:  translate(5px,0px)  skewX(30deg);
+  }
+  80% {
+    opacity:1;
+    -moz-transform:  translate(0px,0px)  skewX(-15deg) ;
+  }
+  100% {
+    opacity:1;
+    -moz-transform:  translate(0px,0px)  skewX(0deg);
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+
+    -webkit-transform:  translate(-9px,0px)  skewX(-30deg);
+  }
+  60% {
+    opacity:1;
+    -webkit-transform:  translate(5px,0px)  skewX(30deg);
+  }
+  80% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  skewX(-15deg) ;
+  }
+  100% {
+    opacity:1;
+    -webkit-transform:  translate(0px,0px)  skewX(0deg) ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+
+    -o-transform:  translate(-9px,0px)  skewX(-30deg) ;
+  }
+  60% {
+    opacity:1;
+    -o-transform:  translate(5px,0px)  skewX(30deg) ;
+  }
+  80% {
+    opacity:1;
+    -o-transform:  translate(0px,0px)  skewX(-15deg) ;
+  }
+  100% {
+    opacity:1;
+    -o-transform:  translate(0px,0px)  skewX(0deg) ;
+  }
+}
+
+
 
 
 .hovicon.effect-plane:hover:before {
   font-family: 'Glyphicons Halflings';
   content: "\e108";
   color: #e84436;
+-webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 .hovicon.effect-plane:hover:after {
+
+
+
+
 }
 
 /* MAIL */
@@ -316,22 +387,19 @@ footer {
 .hovicon.effect-mail:before {
   font-family: 'Glyphicons Halflings';
   content: "\2709";
-  color:575756;
+  color:#575756;
 }
 
 
 .hovicon.effect-mail:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: black;
-/*    border: 4px ;
 
-*/
   animation: bounce 1s;
 }
 
 .hovicon.effect-mail:hover:before {
   font-family: 'Glyphicons Halflings';
   content: "\2601";
+  color:black;
 }
 
 .hovicon.effect-mail:hover:after {

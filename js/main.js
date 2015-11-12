@@ -18,7 +18,7 @@ $(document).ready(function(){
 
       timerID = setInterval(chrono, 1000); 
  
-    } 
   } 
+   
   
 }); 

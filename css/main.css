@@ -108,8 +108,8 @@ textarea {
 .container-fluid {
      padding-right: 0; /*15px in bootstrap.css*/
      padding-left: 0;  /*idem*/
-     margin-right: auto;
-     margin-left: auto;
+     margin-right: 0;
+     margin-left: 0;
 }
 
 section {
@@ -118,7 +118,9 @@ section {
 
 }
 
-
+#entete {
+  /*background-color: #CCC;*/
+}
 
 #accueil {
     background: url(../img/headerMod.svg) no-repeat center center fixed; 

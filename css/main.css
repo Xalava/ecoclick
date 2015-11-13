@@ -8,6 +8,9 @@ logo gray #575756
 background
 yellow fff271
 red e84436
+
+
+bleu fond: 69aabd;
 */
 
 /* ==========================================================================
@@ -115,12 +118,36 @@ textarea {
 section {
     text-align: center;
     padding:4em 4em;
+    margin-bottom: 2em;
 
 }
 
 #entete {
-  /*background-color: #CCC;*/
+  /*background-color: #555;*/
+  font-size: 1.3em;
+/*  color:white;*/
 }
+
+.blinkred {
+  animation: blinker 4s ease infinite;
+}
+
+@keyframes blinker {  
+  40% { color: #70b52e; }
+
+  90% { color: #e84436; }
+ 
+
+}
+
+@-webkit-keyframes blinker { 
+  40% { color: #70b52e; }
+
+  90% { color: #e84436; }
+ 
+ 
+}
+
 
 #accueil {
     background: url(../img/headerMod.svg) no-repeat center center fixed; 
@@ -158,16 +185,16 @@ section {
 }
 
 #contenu{
-    background: url(../img/fond.png) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: #69aabd; 
+ 
     text-align: center;
     position: relative;
     color:black;
-    text-shadow:2px 2px 8px #555;
-    text-decoration: bold;
+
+}
+
+#contenu img {
+        text-shadow:2px 2px 8px #555;
 
 }
 
@@ -186,7 +213,49 @@ section {
     color:black;
     text-shadow:2px 2px 8px #555;
     text-decoration: bold;
+
+    overflow: hidden;
 }
+
+
+
+  #impact .csq{
+    margin-top: 3em;
+
+  }
+  #impact .csq h3{
+    /*opacity: 0;*/
+
+  }
+
+  #impact .csq h3:hover{
+    opacity: 1;
+
+  }
+
+  #impact .csq:hover{
+
+/*  overflow: hidden;
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+
+  -webkit-transform: scale(1.3);
+  transform: scale(1.4);
+
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;*/
+
+/*  background-color: rgba(9,9,9,0.1);
+  border-radius: 100%;*/
+  }
+
+
+
 #equipe{
 
 }
@@ -201,6 +270,8 @@ section {
 
 .profile:hover {
   background: #EEE;
+  border-radius: 30%;
+
 }
     
     .profile img {

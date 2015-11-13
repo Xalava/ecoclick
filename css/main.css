@@ -129,7 +129,7 @@ section {
 }
 
 .blinkred {
-  animation: blinker 4s ease infinite;
+  animation: blinker 7s ease infinite;
 }
 
 @keyframes blinker {  

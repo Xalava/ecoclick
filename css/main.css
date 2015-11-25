@@ -5,9 +5,10 @@ basegray 323232
 logo green #70b52e
 logo gray #575756
 
-background
+background avatar
 yellow fff271
 red e84436
+bleu 3bbff0
 
 
 bleu fond: 69aabd;
@@ -348,10 +349,10 @@ footer {
     z-index: -1;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
     opacity: 1;
-    -webkit-transform: scale(0.9);
+/*    -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -ms-transform: scale(0.9);
-    transform: scale(0.9);
+    transform: scale(0.9);*/
 }
 .hovicon:before {
     speak: none;
